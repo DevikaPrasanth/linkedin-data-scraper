@@ -1,0 +1,12 @@
+{
+  "name": "linkedin-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0",
+    "puppeteer": "^21.0.0"
+  }
+}
