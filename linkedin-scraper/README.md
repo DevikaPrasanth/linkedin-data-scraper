@@ -36,6 +36,14 @@ For security reasons, real cookies are not included in this repository.
 
 The scraper will not work without a valid authenticated session.
 
+### Setup Steps
+1. Log in to LinkedIn using Chrome
+2. Open DevTools → Application → Cookies → https://www.linkedin.com
+3. Copy the `li_at` cookie
+4. Create a file named `cookies.json` in the project root
+5. Follow the structure shown in `cookies.sample.json`
+
+
 ## Installation
 
 cd linkedin-scraper
@@ -57,3 +65,4 @@ node src/index.js
 
 
 JSON outputs are saved in samples/company.json and samples/profile.json.
+
