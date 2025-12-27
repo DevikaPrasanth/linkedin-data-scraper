@@ -21,17 +21,20 @@ It provides two main functionalities:
 
 ---
 
-## Authentication Note
+## Authentication (LinkedIn Cookies)
 
-This project uses LinkedIn session cookies for authentication.
+LinkedIn authentication is handled using session cookies.
 
-For security reasons:
-- `cookies.json` is intentionally excluded from the repository.
-- To run the scraper, users must manually export their own LinkedIn cookies
-  and place them in the project root as `cookies.json`.
+For security reasons, real cookies are not included in this repository.
 
-Refer to the setup section for instructions.
+### Setup Steps
+1. Log in to LinkedIn using Chrome
+2. Open DevTools → Application → Cookies → https://www.linkedin.com
+3. Copy the `li_at` cookie
+4. Create a file named `cookies.json` in the project root
+5. Follow the structure shown in `cookies.sample.json`
 
+The scraper will not work without a valid authenticated session.
 
 ## Installation
 
@@ -51,5 +54,6 @@ Load cookies before scraping to access logged-in content.
 node src/index.js 
 
 4. Output
+
 
 JSON outputs are saved in samples/company.json and samples/profile.json.
